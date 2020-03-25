@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Hello world" />
+    <priceBTC />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import priceBTC from "./components/priceBTC";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    priceBTC
   }
 };
 </script>
