@@ -3,7 +3,7 @@ Projeto desenvolvido para consumir API da cotação do BTC.
 
 <h2>:rocket: Tecnologias</h2>
 
-:white_check_mark: - Vue (Props, Components, V-For, V-Bind, Data, Mounted, Filters)
+:white_check_mark: - Vue (Props, Components, V-For, V-Bind, Mounted, Filters)
 
 :white_check_mark: - CSS
 
