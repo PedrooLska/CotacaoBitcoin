@@ -11,7 +11,7 @@ Projeto desenvolvido para consumir API da cotação do BTC.
 
 <h2>:page_facing_up: Layout</h2>
 
-![Screenshot_1](https://user-images.githubusercontent.com/45328215/77673626-2dde1600-6f69-11ea-9b49-dc1b00237245.png)
+![FireShot Capture 001 -  - localhost](https://user-images.githubusercontent.com/45328215/85212461-753a2f80-b329-11ea-8f79-86ca0a57c8f2.png)
 
 <h2>:arrow_forward: Inicializar o Projeto</h2>
 
