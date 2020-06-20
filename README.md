@@ -1,5 +1,5 @@
 <h2>:computer: Projeto</h2>
-Projeto desenvolvido para consumir API da cotação do BTC.
+Projeto desenvolvido para consumir API de cotação do Bitcoin.
 
 <h2>:rocket: Tecnologias</h2>
 
