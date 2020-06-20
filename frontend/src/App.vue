@@ -1,6 +1,6 @@
 <template>
   <div>
-    <priceBTC title="Price BTC" />
+    <priceBTC title="Cotação Bitcoin" />
   </div>
 </template>
 
