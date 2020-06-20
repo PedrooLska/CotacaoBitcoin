@@ -2,39 +2,37 @@
   <div class="priceBTC">
     <h1>{{ title }}</h1>
 
-    <div v-for="coins in coin" v-bind:key="coins.code">
-      <big>{{ coins.description }}:</big>
+    <div v-for="(item, index) in coin" :key="index">
+      <big>{{ item.description }}:</big>
 
       <span>
-        <span v-html="coins.symbol"></span>
-        {{ coins.rate_float | valueToFixed }}
+        <span v-html="item.symbol"></span>
+        {{ item.rate_float | toFixed2 }}
       </span>
     </div>
   </div>
 </template>
 
 <script>
-import axios from "axios";
 
 export default {
-  name: "priceBTC",
   props: ["title"],
+
   data() {
     return {
-      coin: null
+
+      coin: ''
+
     };
+
   },
 
   mounted() {
-    axios
-      .get("https://api.coindesk.com/v1/bpi/currentprice.json")
-      .then(response => (this.coin = response.data.bpi));
+
+    this.$http.get('currentprice.json')
+    .then(response => (this.coin = response.data.bpi));
+
   },
-  filters: {
-    valueToFixed(value) {
-      return value.toFixed(2);
-    }
-  }
 };
 </script>
 
