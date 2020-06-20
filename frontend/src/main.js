@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 
-import api from './api'
+import api from './services/api'
 
 import './filters'
 

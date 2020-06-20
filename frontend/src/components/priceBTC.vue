@@ -2,14 +2,13 @@
   <div class="priceBTC">
     <h1>{{ title }}</h1>
 
-    <div v-for="(item, index) in coin" :key="index">
-      <big>{{ item.description }}:</big>
+      <div v-for="(item, index) in coin" :key="index">
+        <span>{{ item.description }}: </span>
 
-      <span>
         <span v-html="item.symbol"></span>
-        {{ item.rate_float | toFixed2 }}
-      </span>
-    </div>
+        <span> {{ item.rate_float | toFixed2 }}</span>
+      </div>
+
   </div>
 </template>
 
@@ -39,8 +38,9 @@ export default {
 <style scoped>
 .priceBTC {
   color: white;
-  background: rgb(60, 1, 95);
-  border-radius: 30px;
+  background: linear-gradient(to bottom right, #b65eba, #2e8de1);
+  border: solid white 1px;
+  border-radius: 10px;
   width: 450px;
   padding: 50px;
   margin: 0 auto;

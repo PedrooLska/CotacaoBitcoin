@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <priceBTC title="Price BTC" />
   </div>
 </template>
@@ -8,7 +8,6 @@
 import priceBTC from "./components/priceBTC";
 
 export default {
-  name: "App",
   components: {
     priceBTC
   }
@@ -26,7 +25,7 @@ export default {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(to right, rgb(54, 1, 85), rgb(93, 2, 146));
+  background: #80a8ff;
   display: flex;
   align-items: center;
   justify-content: center;
