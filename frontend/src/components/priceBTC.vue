@@ -28,10 +28,21 @@ export default {
 
   mounted() {
 
-    this.$http.get('currentprice.json')
-    .then(response => (this.coin = response.data.bpi));
+    this.getCoin()
 
   },
+
+  methods: {
+    
+    getCoin() {
+
+      this.$http.get('currentprice.json')
+        .then(response => (this.coin = response.data.bpi));
+
+    }
+
+  }
+
 };
 </script>
 
@@ -49,11 +60,5 @@ export default {
 .priceBTC h1 {
   margin: 15px;
   text-align: center;
-}
-
-.priceBTC big {
-  font-size: 16px;
-  font-weight: bold;
-  margin-right: 10px;
 }
 </style>
