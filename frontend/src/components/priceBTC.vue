@@ -34,7 +34,7 @@ export default {
 
   methods: {
     
-    getCoin: () => {
+    getCoin() {
 
       this.$http.get('currentprice.json')
         .then(response => (this.coin = response.data.bpi));
