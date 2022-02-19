@@ -1,15 +1,6 @@
-import Vue from 'vue'
-import App from './App'
-
-import api from './services/api'
-
-import './filters'
-
-Vue.config.productionTip = false
-Vue.prototype.$http = api; 
+import Vue from "vue";
+import App from "./App";
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
-
-
+  render: h => h(App)
+}).$mount("#app");
