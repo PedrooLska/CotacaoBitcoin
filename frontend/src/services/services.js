@@ -1,7 +1,7 @@
 import api from "./api";
 
 export default {
-  getPriceBtc() {
+  getPriceBTC() {
     return api.get("currentprice.json");
   }
 };

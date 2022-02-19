@@ -1,6 +1,6 @@
 <template>
   <div class="priceBTC">
-    <img src="./img/layout.svg" class="priceBTC__image" />
+    <img src="./img/img.svg" class="priceBTC__image" />
     <h1 class="priceBTC__title">Price BTC</h1>
     <priceBTC :listPriceBTC="listPriceBTC" />
   </div>
@@ -25,14 +25,14 @@ export default {
     async getPriceBTC() {
       const {
         data: { bpi }
-      } = await Services.getPriceBtc();
+      } = await Services.getPriceBTC();
       this.listPriceBTC = bpi;
     }
   }
 };
 </script>
 
-<style>
+<style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
@@ -61,14 +61,14 @@ body {
   margin: 0 auto;
   -webkit-box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.49);
   box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.49);
-}
 
-.priceBTC__image {
-  width: 300px;
-}
+  &__image {
+    width: 300px;
+  }
 
-.priceBTC__title {
-  margin: 15px;
-  text-align: center;
+  &__title {
+    margin: 20px;
+    text-align: center;
+  }
 }
 </style>
