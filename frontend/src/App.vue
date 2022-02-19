@@ -1,5 +1,6 @@
 <template>
   <div class="priceBTC">
+    <img src="./img/layout.svg" class="priceBTC__image" />
     <h1 class="priceBTC__title">Price BTC</h1>
     <priceBTC :listPriceBTC="listPriceBTC" />
   </div>
@@ -42,7 +43,7 @@ export default {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #80a8ff;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,13 +52,19 @@ body {
 }
 
 .priceBTC {
-  color: white;
-  background: linear-gradient(to bottom right, #b65eba, #2e8de1);
+  position: absolute;
+  background-color: #ffff;
   border: solid white 1px;
   border-radius: 10px;
   width: 450px;
   padding: 50px;
   margin: 0 auto;
+  -webkit-box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.49);
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.49);
+}
+
+.priceBTC__image {
+  width: 300px;
 }
 
 .priceBTC__title {

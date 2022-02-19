@@ -1,7 +1,10 @@
 <template>
   <div>
     <div v-for="(priceBTC, index) in listPriceBTC" :key="index">
-      <span>{{ priceBTC.description }} {{ index }}: </span>
+      <span
+        ><strong>{{ priceBTC.description }}</strong
+        >:
+      </span>
 
       <span v-html="priceBTC.symbol"></span>
       <span> {{ priceBTC.rate_float.toFixed(2) }}</span>
