@@ -3,7 +3,7 @@ Projeto desenvolvido para consumir API de cotação do Bitcoin.
 
 <h2>:rocket: Tecnologias</h2>
 
-:white_check_mark: - Vue (Props, Components, V-For, V-Bind, Mounted, Filters, Methods)
+:white_check_mark: - Vue
 
 :white_check_mark: - CSS
 
@@ -11,7 +11,7 @@ Projeto desenvolvido para consumir API de cotação do Bitcoin.
 
 <h2>:page_facing_up: Layout</h2>
 
-![FireShot Capture 002 -  - localhost](https://user-images.githubusercontent.com/45328215/85212902-c3513200-b32d-11ea-9134-5f6967cfa822.png)
+![LAYOUT COTAÇÃO BTC](https://user-images.githubusercontent.com/45328215/154810683-21b8cf41-e553-4d86-b818-a70c73d10906.png)
 
 <h2>:arrow_forward: Inicializar o Projeto</h2>
 
@@ -26,11 +26,11 @@ Agora vamos entrar na pasta do FrontEnd da aplicação:
 
 Agora vamos instalar as dependência necessárias para rodar o FrontEnd:
 
-`npm i`
+`yarn ou npm i`
 
 Agora vamos iniciar o FrontEnd da aplicação:
 
-`yarn run serve ou npm run serve`
+`yarn dev ou npm run dev`
 
 
 <h3> Pronto, aplicação rodando!!! </h3>
